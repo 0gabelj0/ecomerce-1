@@ -3,45 +3,69 @@
 const products = [
     {
         id: 1,
-        name: "Cadeira de Escritório Minimalista",
-        price: 599.99,
-        image: "image/Cadeira de Escritório Minimalista.avif"
+        name: "Action figure do yoriichi",
+        price: 300.00,
+        image: "image/yoriichi.png"
     },
     {
         id: 2,
-        name: "Mesa de Centro Moderna",
+        name: "Action figure do tanjiro",
         price: 349.99,
-        image: "image/mesa.webp"
+        image: "image/tanjiro.jpg"
     },
     {
         id: 3,
-        name: "Luminária de Mesa Elegante",
+        name: "Action figure do homem aranha",
         price: 129.99,
-        image: "image/Luminária de Mesa Elegante.avif"
+        image: "image/aranha.png"
     },
     {
         id: 4,
-        name: "Vaso Decorativo Cerâmica",
-        price: 79.99,
-        image: "image/Vaso Decorativo Cerâmica.avif"
+        name: "Action figure do zenitsu",
+        price: 100.00,
+        image: "image/zenitsu.jpg"
     },
     {
         id: 5,
-        name: "Conjunto de Canetas Premium",
+        name: "Action figure da nodoka",
         price: 45.99,
-        image: "image/Conjunto de Canetas Premium.avif"
+        image: "image/nodoka.jpg"
     },
     {
         id: 6,
-        name: "Caderno de Notas Capa Dura",
-        price: 29.99,
-        image: "image/Caderno de Notas Capa Dura.avif"
+        name: "Action figure de bunny girl premium",
+        price: 550.00,
+        image: "image/mai sakurajima premium.webp"
     },
     {
         id: 7,
-        name: "Sofá Vintage verde musgo",
-        price: 799.99,
-        image: "image/Mesa de Centro Moderna.avif"
+        name: "Fuction figure da Tomoe Koga premium",
+        price: 350.00,
+        image: "image/tomoe koga premium.jpg"
+    },
+    {
+        id: 8,
+        name: "Fuction figure da Tomoe Koga",
+        price: 250.00,
+        image: "image/tomoe koga.jpg"
+    },
+    {
+        id: 9,
+        name: "Action figure shoko makinohara",
+        price: 300.00,
+        image: "image/shoko.png"
+    },
+    {
+        id: 10,
+        name: "Action figure da kaede azusagawa",
+        price: 250.00,
+        image: "image/tomoekoga.png"
+    },
+    {
+        id: 11,
+        name: "Funko pop de bunny girl senpai",
+        price: 350.00,
+        image: "image/bunny.jpg"
     },
 ];
 

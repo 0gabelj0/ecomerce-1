@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 .add-to-cart:hover {
-    background-color: #2980b9;
+    background-color: #400505;
 }
 
 /* Carrinho lateral */
@@ -212,8 +212,8 @@ nav ul li a:hover {
     right: -400px;
     width: 350px;
     height: 100vh;
-    background-color: white;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    box-shadow: -5px 0 15px rgba(106, 2, 2, 0.1);
     padding: 2rem;
     transition: right 0.3s ease;
     z-index: 1000;
@@ -270,7 +270,7 @@ nav ul li a:hover {
 }
 
 .cart-item-price {
-    color: #3498db;
+    color: #660303;
     font-weight: 600;
 }
 
@@ -292,8 +292,8 @@ nav ul li a:hover {
 .checkout-btn {
     width: 100%;
     padding: 1rem;
-    background-color: #2ecc71;
-    color: white;
+    background-color: #a91414;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     font-weight: 600;
@@ -302,7 +302,7 @@ nav ul li a:hover {
 }
 
 .checkout-btn:hover {
-    background-color: #27ae60;
+    background-color: #ca1111;
 }
 
 /* Overlay para o carrinho */
@@ -475,7 +475,7 @@ nav ul li a:hover {
 
 .cadastro-form input:focus {
     outline: none;
-    border-color: #66c0f4;
+    border-color: #400101;
     background-color: #1b1b1b;
 }
 

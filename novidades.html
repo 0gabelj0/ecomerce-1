@@ -39,7 +39,22 @@
             <label for="Telefone">Telefone</label>
             <input type="tel" id="Telefone" placeholder="Digite seu telefone" required>
 
-            <button type="submit" class="btn-cadastro">Confirmar</button>
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678"required>
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro"required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro"required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado"required>
+
+            <button type="submit" id="confirmarbotao" class="btn-cadastro">Confirmar</button>
         </form>
     </section>
 
@@ -51,5 +66,42 @@
             <a href="#">Contato</a>
         </div>
     </footer>
+
+    <script>
+        // 1. Selecionar o elemento pelo ID
+       var campoCep = document.getElementById('cep');
+       // 2. Adicionar o event listener para o evento 'blur'(executado quando é retirado o mouse)
+       campoCep.addEventListener('blur', function() {
+           let valorCep  = campoCep.value; // pegar o valor do campoCep
+           fetch("https://viacep.com.br/ws/"+valorCep+"/json/")
+               .then(response => response.json())
+               .then(data => {
+                   console.log(data);
+                   document.getElementById('logradouro').value = data.logradouro || '';
+                   document.getElementById('bairro').value = data.bairro || '';
+                   document.getElementById('cidade').value = data.localidade || '';
+                   document.getElementById('estado').value = data.uf   || '';
+                   mudaBorda(0)
+               })
+               .catch(error => mudaBorda(1));ww
+           });
+   
+           function mudaBorda(cor) {
+               if(cor == 1){
+                   campoCep.style.border = "4px solid red";
+               }else{
+                   campoCep.style.border = "4px solid green";
+               }
+           }
+
+           // Redirecionar ao clicar no botão Confirmar
+document.getElementById('confirmarbotao').addEventListener('click', function(event) {
+    event.preventDefault(); // impede o envio do formulário
+    window.location.href = "index.html"; // redireciona para a página inicial
+});
+
+
+   </script>
+
 </body>
 </html>
